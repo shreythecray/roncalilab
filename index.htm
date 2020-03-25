@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<!-- saved from url=(0031)https://h4sis.calblueprint.org/ -->
+
+<html class="gr__h4sis_calblueprint_org"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+    <title>Emilie Roncali Lab - UC Davis</title>
+        <link href="https://fonts.googleapis.com/css?family=Lexend+Deca&display=swap" rel="stylesheet">
+
+    <link href="./style/styles.css" rel="stylesheet">
+    <link rel="icon" type="image/png" href="./files/ucdbme.png">
+    <script>
+      function switchTab(num, type) {
+        const [buttons] = document.getElementsByClassName("tab-buttons--" + type);
+        const [tabContents] = document.getElementsByClassName("tab-content--" + type);
+
+        for (let i = 0; i < buttons.children.length; i++) {
+          if (i === num) {
+            buttons.children[i].className = "tab-button tab-button--active";
+            tabContents.children[i].className = "tab-content tab-content--active";
+          } else {
+            buttons.children[i].className = "tab-button";
+            tabContents.children[i].className = "tab-content";
+          }
+        }
+      }
+
+      function checkSticky() {
+        const [navbar] = document.getElementsByTagName("nav");
+
+        if (window.pageYOffset > 0) {
+          navbar.classList.add("nav--fixed")
+        } else {
+          navbar.classList.remove("nav--fixed");
+        }
+      }
+
+      // When the user scrolls the page, execute myFunction
+      window.onscroll = checkSticky;
+    </script>
+  </head>
+  <body data-gr-c-s-loaded="true" style="zoom: 1;">
+    <nav>
+      <div class="nav-content">
+        <a class="logo">
+          <img src="./files/ucdbme.png">
+        </a>
+        <div class="links">
+          <a class="nav-link" href="./index.htm">Home</a>
+          <a class="nav-link" href="./research.htm">Research</a>
+          <a class="nav-link" href="./index.htm#people">Team</a>
+          <a class="nav-link" href="#trailer">Opportunities</a>
+        </div>
+      </div>
+    </nav>
+
+    <div class="content">
+      <a name="#"></a>
+      <div class="landing-wrapper">
+        <div class="landing">
+          <div class="caption">
+            <p>UC Davis Biomedical Engineering</p>
+          </div>
+          <div class="container">
+            <img src="./files/title.png" alt="code" style="width:100%;">
+          </div>
+          <h1 class="landing-title" class="centered">Emilie Roncali Lab</h1>
+        </div>
+      </div>
+
+      <a name="about"></a>
+      <div class="image-text-section">
+        <div class="image-text-section__visual">
+          <a class="twitter-timeline" data-height="500" data-theme="light" href="https://twitter.com/EmilieRoncali?ref_src=twsrc%5Etfw">Tweets by EmilieRoncali</a> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+        </div>
+        <div class="image-text-section__content">
+          <h3 class="title">Wecome</h3>
+          <p class="paragraph">
+            <br><br>
+            The Roncali lab is part of the Department of Biomedical Engineering and the Department of
+            Radiology.
+            <br><br>
+            Applying a biomedical engineering perspective to solve clinical problems, we
+            conduct highly translational and interdisciplinary research in close collaboration with clinicians
+            at UC Davis Health and other institutions.
+            <br><br>
+            We focus on modeling and simulation for medical
+            imaging and therapy physics, and translating the benefits of technological advances to
+            improving the care of our patients. Please explore our website to learn more!</p>
+        </div>
+      </div>
+
+      <a name="people"></a>
+      <div class="image-text-section">
+        <div class="image-text-section__content">
+          <h2 class="headline">Team</h2>
+        </div>
+      </div>
+
+      <div class="image-text-section">
+        <div class="image-text-section__visual">
+          <img src="./files/team/roncali.jpg" draggable="false">
+        </div>
+        <div class="image-text-section__content">
+          <h3 class="title">Roncali, Ph.D.</h3>
+          <p class="paragraph">
+            <i>Assistant Professor in Biomedical Engineering and Radiology</i>
+          </p>
+        </div>
+      </div>
+
+      <div class="image-text-section">
+        <div class="image-text-section__visual">
+          <!--insert image-->
+        </div>
+        <div class="image-text-section__content">
+          <h3 class="title">Gustavo Coelho Alves Costa, Ph.D.</h3>
+          <p class="paragraph">
+            <i>Postdoctoral Researcher</i>
+          </p>
+        </div>
+      </div>
+
+      <div class="image-text-section">
+        <div class="image-text-section__visual">
+          <img src="./files/team/taebi.jpg" draggable="false">
+        </div>
+        <div class="image-text-section__content">
+          <h3 class="title">Amirtaha Taebi, Ph.D.</h3>
+          <p class="paragraph">
+            <i>Postdoctoral Researcher</i>
+          </p>
+        </div>
+      </div>
+
+      <div class="image-text-section">
+        <div class="image-text-section__visual">
+          <!--insert image-->
+        </div>
+        <div class="image-text-section__content">
+          <h3 class="title">Carlotta Trigila, Ph.D.</h3>
+          <p class="paragraph">
+            <i>Postdoctoral Researcher</i>
+          </p>
+        </div>
+      </div>
+
+      <div class="image-text-section">
+        <div class="image-text-section__visual">
+          <!--insert image-->
+        </div>
+        <div class="image-text-section__content">
+          <h3 class="title">Shaan Bhalaru</h3>
+          <p class="paragraph">
+            <i>Undergraduate Student</i>
+          </p>
+        </div>
+      </div>
+
+      <div class="image-text-section">
+        <div class="image-text-section__visual">
+          <!--insert image-->
+        </div>
+        <div class="image-text-section__content">
+          <h3 class="title">Shreya Gupta</h3>
+          <p class="paragraph">
+            <i>Undergraduate Student</i>
+          </p>
+        </div>
+      </div>
+
+      <div class="image-text-section">
+        <div class="image-text-section__visual">
+          <!--insert image-->
+        </div>
+        <div class="image-text-section__content">
+          <h3 class="title">Carlotta Trigila, Ph.D.</h3>
+          <p class="paragraph">
+            <i>Postdoctoral Researcher</i>
+          </p>
+        </div>
+      </div>
+
+      <div class="image-text-section">
+        <div class="image-text-section__visual">
+          <!--insert image-->
+        </div>
+        <div class="image-text-section__content">
+          <h3 class="title">Nursultan Janibek</h3>
+          <p class="paragraph">
+            <i>Undergraduate Student</i>
+          </p>
+        </div>
+      </div>
+
+      <div class="image-text-section">
+        <div class="image-text-section__content">
+          <h2 class="headline">Collaborators</h2>
+        </div>
+      </div>
+
+      <div class="image-text-section">
+        <div class="image-text-section__visual">
+          <!--insert image-->
+        </div>
+        <div class="image-text-section__content">
+          <h3 class="title">Gerard Ariño-Estrada, Ph.D.</h3>
+          <p class="paragraph">
+            <i>*Assistant Project Scientist*</i><br>
+            Department of Biomedical Engineering
+          </p>
+        </div>
+      </div>
+
+      <div class="image-text-section">
+        <div class="image-text-section__visual">
+          <img src="./files/team/kwon.jpg" draggable="false">
+        </div>
+        <div class="image-text-section__content">
+          <h3 class="title">Sun Il Kwon, Ph.D.</h3>
+          <p class="paragraph">
+            <i>Assistant Project Scientist</i><br>
+            Department of Biomedical Engineering
+          </p>
+        </div>
+      </div>
+
+    </div>
+</body></html>

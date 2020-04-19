@@ -1,91 +1,60 @@
 <!DOCTYPE html>
-<!-- saved from url=(0031)https://h4sis.calblueprint.org/ -->
+<html lang="en">
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  <title>Emilie Roncali Lab - UC Davis</title>
+  <link href="https://fonts.googleapis.com/css?family=Lexend+Deca&display=swap" rel="stylesheet">
+  <link href="./style/styles.css" rel="stylesheet">
+  <link rel="icon" type="image/png" href="./assets/ucdbme.png">
+  <script src="script.js"></script>
+</head>
 
-<html class="gr__h4sis_calblueprint_org"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-
-    <title>Emilie Roncali Lab - UC Davis</title>
-        <link href="https://fonts.googleapis.com/css?family=Lexend+Deca&display=swap" rel="stylesheet">
-
-    <link href="./style/styles.css" rel="stylesheet">
-    <link rel="icon" type="image/png" href="./files/ucdbme.png">
-    <script>
-      function switchTab(num, type) {
-        const [buttons] = document.getElementsByClassName("tab-buttons--" + type);
-        const [tabContents] = document.getElementsByClassName("tab-content--" + type);
-
-        for (let i = 0; i < buttons.children.length; i++) {
-          if (i === num) {
-            buttons.children[i].className = "tab-button tab-button--active";
-            tabContents.children[i].className = "tab-content tab-content--active";
-          } else {
-            buttons.children[i].className = "tab-button";
-            tabContents.children[i].className = "tab-content";
-          }
-        }
-      }
-
-      function checkSticky() {
-        const [navbar] = document.getElementsByTagName("nav");
-
-        if (window.pageYOffset > 0) {
-          navbar.classList.add("nav--fixed")
-        } else {
-          navbar.classList.remove("nav--fixed");
-        }
-      }
-
-      // When the user scrolls the page, execute myFunction
-      window.onscroll = checkSticky;
-    </script>
-  </head>
-  <body data-gr-c-s-loaded="true" style="zoom: 1;">
+<!-- BODY -->
+  <body>
     <nav>
       <div class="nav-content">
+        <!-- LOGO -->
         <a class="logo">
-          <img src="./files/ucdbme.png">
+          <img src="./assets/ucdbme.png">
         </a>
+        <!-- MENU -->
         <div class="links">
           <a class="nav-link" href="./index.htm">Home</a>
           <a class="nav-link" href="./research.htm">Research</a>
           <a class="nav-link" href="./index.htm#people">Team</a>
-          <a class="nav-link" href="#trailer">Opportunities</a>
+          <a class="nav-link" href="./opportunities.htm">Opportunities</a>
+          <a class="nav-link" href="http://recruitbme.engineering.ucdavis.edu/" target="_blank">Recruitment</a>
         </div>
       </div>
     </nav>
 
+
     <div class="content">
-      <a name="#"></a>
       <div class="landing-wrapper">
-        <div class="landing">
-          <div class="caption">
-            <p>UC Davis Biomedical Engineering</p>
-          </div>
-          <div class="container">
-            <img src="./files/title.png" alt="code" style="width:100%;">
-          </div>
-          <h1 class="landing-title" class="centered">Emilie Roncali Lab</h1>
+        <!-- TITLE -->
+        <div>
+          <h1 class="landing-title" class="centered">Roncali Lab</h1>
+          <img src="./assets/title.png" alt="code" style="width:100%;">
         </div>
       </div>
 
       <a name="about"></a>
       <div class="image-text-section">
-        <div class="image-text-section__visual">
-          <a class="twitter-timeline" data-height="500" data-theme="light" href="https://twitter.com/EmilieRoncali?ref_src=twsrc%5Etfw">Tweets by EmilieRoncali</a> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
-        </div>
         <div class="image-text-section__content">
-          <h3 class="title">Wecome</h3>
+          <h2 class="title">Welcome</h2><br>
           <p class="paragraph">
+            The Roncali lab is part of the Department of Biomedical Engineering and the Department of Radiology.
             <br><br>
-            The Roncali lab is part of the Department of Biomedical Engineering and the Department of
-            Radiology.
+            Applying a biomedical engineering perspective to solve clinical problems, we conduct highly translational and interdisciplinary research in close collaboration with clinicians at UC Davis Health and other institutions.
             <br><br>
-            Applying a biomedical engineering perspective to solve clinical problems, we
-            conduct highly translational and interdisciplinary research in close collaboration with clinicians
-            at UC Davis Health and other institutions.
-            <br><br>
-            We focus on modeling and simulation for medical
-            imaging and therapy physics, and translating the benefits of technological advances to
-            improving the care of our patients. Please explore our website to learn more!</p>
+            We focus on modeling and simulation for medical imaging and therapy physics, and translating the benefits of technological advances to improving the care of our patients. Please explore our website to learn more!</p>
+        </div>
+        <div class="image-text-section__visual">
+          <a class="twitter-timeline" data-height="500" data-theme="light" href="https://twitter.com/EmilieRoncali?ref_src=twsrc%5Etfw">
+            Tweets by EmilieRoncali
+          </a>
+          <script async src="https://platform.twitter.com/widgets.js" charset="utf-8">
+          </script>
         </div>
       </div>
 
@@ -98,48 +67,63 @@
 
       <div class="image-text-section">
         <div class="image-text-section__visual">
-          <img src="./files/team/roncali.jpg" draggable="false">
+          <img src="./assets/team/roncali.jpg" draggable="false">
         </div>
         <div class="image-text-section__content">
           <h3 class="title">Roncali, Ph.D.</h3>
-          <p class="paragraph">
+          <p class="team">
             <i>Assistant Professor in Biomedical Engineering and Radiology</i>
+            <br>DEPARTMENT OF BIOMEDICAL ENGINEERING | <a href="mailto:joe@eroncali@ucdavis.edu?subject=feedback" style="color:#CEE5F2">eroncali@ucdavis.edu</a>
+            <br>PROJECT:
+            <BR>EDUCATION:
           </p>
         </div>
       </div>
 
       <div class="image-text-section">
         <div class="image-text-section__visual">
-          <!--insert image-->
+          <img src="./assets/team/costa.jpg" draggable="false">
         </div>
         <div class="image-text-section__content">
           <h3 class="title">Gustavo Coelho Alves Costa, Ph.D.</h3>
-          <p class="paragraph">
+          <p class="team">
             <i>Postdoctoral Researcher</i>
+            <br>DEPARTMENT OF BIOMEDICAL ENGINEERING |
+            <br>PROJECT:
+            <BR>EDUCATION:
           </p>
         </div>
       </div>
 
       <div class="image-text-section">
         <div class="image-text-section__visual">
-          <img src="./files/team/taebi.jpg" draggable="false">
+          <img src="./assets/team/taebi.jpg" draggable="false">
         </div>
         <div class="image-text-section__content">
           <h3 class="title">Amirtaha Taebi, Ph.D.</h3>
-          <p class="paragraph">
+          <p class="team">
             <i>Postdoctoral Researcher</i>
+            <br>DEPARTMENT OF BIOMEDICAL ENGINEERING | <a href="mailto:ataebi@ucdavis.edu?subject=feedback" style="color:#CEE5F2">ataebi@ucdavis.edu</a>
+            <br>PROJECT: CFDose, a dosimetry method for liver cancer radioembolization based on computational fluid dynamics simulation of the blood flow inside hepatic arterial tree.
+            <BR>EDUCATION:
+            <br>PhD, University of Central Florida, 2018
+            <br>MSc, Politecnico di Milano, 2013
+            <br>BSc, Sharif University of Technology, 2010
           </p>
         </div>
       </div>
 
       <div class="image-text-section">
         <div class="image-text-section__visual">
-          <!--insert image-->
+          <img src="./assets/team/trigila.jpg" draggable="false">
         </div>
         <div class="image-text-section__content">
           <h3 class="title">Carlotta Trigila, Ph.D.</h3>
-          <p class="paragraph">
+          <p class="team">
             <i>Postdoctoral Researcher</i>
+            <br>DEPARTMENT OF BIOMEDICAL ENGINEERING |
+            <br>PROJECT:
+            <BR>EDUCATION:
           </p>
         </div>
       </div>
@@ -150,32 +134,27 @@
         </div>
         <div class="image-text-section__content">
           <h3 class="title">Shaan Bhalaru</h3>
-          <p class="paragraph">
+          <p class="team">
             <i>Undergraduate Student</i>
+            <br>DEPARTMENT OF BIOMEDICAL ENGINEERING | <a href="mailto:sbhalaru@ucdavis.edu?subject=feedback" style="color:#CEE5F2">sbhalaru@ucdavis.edu</a>
+            <br>PROJECT: My current project is to help predict blood flow in the hepatic artery to aid in the process of radioembolization to help faster diagnose liver cancer patients. I focus on segmenting liver data so that our machine learning program can locate the liver in new patients.
+            <BR>EDUCATION:
+            <br>BS, Expected 2020, University of California Davis
           </p>
         </div>
       </div>
 
       <div class="image-text-section">
         <div class="image-text-section__visual">
-          <!--insert image-->
+          <img src="./assets/team/gupta.jpg" draggable="false">
         </div>
         <div class="image-text-section__content">
           <h3 class="title">Shreya Gupta</h3>
-          <p class="paragraph">
+          <p class="team">
             <i>Undergraduate Student</i>
-          </p>
-        </div>
-      </div>
-
-      <div class="image-text-section">
-        <div class="image-text-section__visual">
-          <!--insert image-->
-        </div>
-        <div class="image-text-section__content">
-          <h3 class="title">Carlotta Trigila, Ph.D.</h3>
-          <p class="paragraph">
-            <i>Postdoctoral Researcher</i>
+            <br>COLLEGE OF ENGINEERING | <a href="mailto:shrgupta@ucdavis.edu?subject=feedback" style="color:#CEE5F2">shrgupta@ucdavis.edu</a>
+            <br>PROJECT: Website Developer
+            <BR>EDUCATION: BS, Expected 2021, Computer Science and Engineering, UC Davis
           </p>
         </div>
       </div>
@@ -186,8 +165,11 @@
         </div>
         <div class="image-text-section__content">
           <h3 class="title">Nursultan Janibek</h3>
-          <p class="paragraph">
+          <p class="team">
             <i>Undergraduate Student</i>
+            <br>DEPARTMENT OF BIOMEDICAL ENGINEERING |
+            <br>PROJECT:
+            <BR>EDUCATION:
           </p>
         </div>
       </div>
@@ -204,22 +186,31 @@
         </div>
         <div class="image-text-section__content">
           <h3 class="title">Gerard Ariño-Estrada, Ph.D.</h3>
-          <p class="paragraph">
-            <i>*Assistant Project Scientist*</i><br>
-            Department of Biomedical Engineering
+          <p class="team">
+            <i>Assistant Project Scientist</i>
+            <br>DEPARTMENT OF BIOMEDICAL ENGINEERING | <a href="mailto:garino@ucdavis.edu?subject=feedback" style="color:#CEE5F2">garino@ucdavis.edu</a>
+            <br>PROJECT: I am interested on novel materials with prompt luminescence properties for time-of-flight positron emission tomography and proton range verification in proton therapy. I characterize pure čerenkov emitters and fast scintillation crystals, such as thallium bromide and thallium chloride. Besides, I am also working on the development of new generation of photodetectors that cope with the very rapid light emission properties of these materials.
+            <BR>EDUCATION:
+            <br>Physics (PhD), 2015, Universitat Autònoma de Barcelona, (Spain)
+            <br>Applied Mathematics and Modeling (MSc), 2012, Universitat Autònoma de Barcelona, (Spain)
+            <br>Physics (BS), 2011, Universitat Autònoma de Barcelona, (Spain)
           </p>
         </div>
       </div>
 
       <div class="image-text-section">
         <div class="image-text-section__visual">
-          <img src="./files/team/kwon.jpg" draggable="false">
+          <img src="./assets/team/kwon.jpg" draggable="false">
         </div>
         <div class="image-text-section__content">
-          <h3 class="title">Sun Il Kwon, Ph.D.</h3>
-          <p class="paragraph">
-            <i>Assistant Project Scientist</i><br>
-            Department of Biomedical Engineering
+          <h4 class="title">Sun Il Kwon, Ph.D.</h4>
+          <p class="team">
+            <i>Assistant Project Scientist</i>
+            <br>DEPARTMENT OF BIOMEDICAL ENGINEERING | <a href="mailto:sunkwon@ucdavis.edu?subject=feedback" style="color:#CEE5F2">sunkwon@ucdavis.edu</a>
+            <br>PROJECT: Developing novel ultra-fast time-of-flight (TOF) positron emission tomography (PET) systems using Cerenkov photons and fast scintillation photons.
+            <BR>EDUCATION:
+            <br>Ph.D., 2013, Seoul National University, Seoul, South Korea
+            <br>B.S., 2002, Korea Advanced Institute of Science and Technology (KAIST), Daejeon, South Korea
           </p>
         </div>
       </div>

@@ -1,43 +1,49 @@
 @font-face {
   font-family: "Roboto";
-  src: url("./Roboto-Regular.ttf"); }
+  src: url("./Roboto-Regular.ttf");
+}
 @font-face {
   font-family: "Roboto";
   src: url("./Roboto-Bold.otf");
-  font-weight: bold; }
+  font-weight: bold;
+}
+
 body {
   //background-image: linear-gradient(#fff, #818181, #898989);
-  background-color: #fff;
+  background-color: #222222;
   margin: 0; }
 
 h1, h2, h3, h4, h5 {
   font-family: "Lexend Deca";
   font-weight: 100;
-  color: #3D3935;
+  color: #fff;
   margin: 0; }
 
 h1 {
+  padding: 100px 0 0 0;
   font-size: 60px; }
 
 h2 {
-  font-size: 30px; }
+  font-size: 40px; }
 
 h3 {
-  font-size: 24px; }
+  padding: 0 0 20px 0;
+  font-size: 30px; }
 
 h4 {
-  font-size: 20px; }
+  margin: 0;
+  padding: 0 0 10px 0;
+  font-size: 30px; }
 
 h5 {
-
-
+  line-height: 30px;
   font-size: 18px; }
 
 p, li {
   font-family: "Roboto";
-  font-size: 16px;
-  color: #3D3935;
-  line-height: 20px; }
+  font-size: 18px;
+  color: #fff;
+  line-height: 30px; }
 
 .content {
   width: 80%;
@@ -50,7 +56,7 @@ nav {
   top: 0;
   width: 100%;
   z-index: 1;
-  background-color: none;
+  background-color: #CEE5F2;
   transition: all 0.2s ease-in-out;
   height: 50px;
   padding: 20px 0 10px 0; }
@@ -224,6 +230,9 @@ nav {
     margin: 0; }
   .image-text-section__content .paragraph {
     margin-top: 10px; }
+  .image-text-section__content .team {;
+    line-height: 25px;
+    font-size: 15px;}
 
 .grid {
   display: flex;

@@ -1,235 +1,118 @@
 <!DOCTYPE html>
-<!-- saved from url=(0031)https://h4sis.calblueprint.org/ -->
+<html lang="en">
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  <title>Emilie Roncali Lab - UC Davis</title>
+  <link href="https://fonts.googleapis.com/css?family=Lexend+Deca&display=swap" rel="stylesheet">
+  <link href="./style/styles.css" rel="stylesheet">
+  <link rel="icon" type="image/png" href="./assets/ucdbme.png">
+  <script src="script.js"></script>
+</head>
 
-<html class="gr__h4sis_calblueprint_org"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-
-    <title>Emilie Roncali Lab - UC Davis</title>
-        <link href="https://fonts.googleapis.com/css?family=Lexend+Deca&display=swap" rel="stylesheet">
-
-    <link href="./style/styles.css" rel="stylesheet">
-    <link rel="icon" type="image/png" href="./files/ucdbme.png">
-    <script>
-      function switchTab(num, type) {
-        const [buttons] = document.getElementsByClassName("tab-buttons--" + type);
-        const [tabContents] = document.getElementsByClassName("tab-content--" + type);
-
-        for (let i = 0; i < buttons.children.length; i++) {
-          if (i === num) {
-            buttons.children[i].className = "tab-button tab-button--active";
-            tabContents.children[i].className = "tab-content tab-content--active";
-          } else {
-            buttons.children[i].className = "tab-button";
-            tabContents.children[i].className = "tab-content";
-          }
-        }
-      }
-
-      function checkSticky() {
-        const [navbar] = document.getElementsByTagName("nav");
-
-        if (window.pageYOffset > 0) {
-          navbar.classList.add("nav--fixed")
-        } else {
-          navbar.classList.remove("nav--fixed");
-        }
-      }
-
-      // When the user scrolls the page, execute myFunction
-      window.onscroll = checkSticky;
-    </script>
-  </head>
-  <body data-gr-c-s-loaded="true" style="zoom: 1;">
+<!-- BODY -->
+  <body>
     <nav>
       <div class="nav-content">
+        <!-- LOGO -->
         <a class="logo">
-          <img src="./files/ucdbme.png">
+          <img src="./assets/ucdbme.png">
         </a>
+        <!-- MENU -->
         <div class="links">
           <a class="nav-link" href="./index.htm">Home</a>
           <a class="nav-link" href="./research.htm">Research</a>
           <a class="nav-link" href="./index.htm#people">Team</a>
-          <a class="nav-link" href="#trailer">Opportunities</a>
+          <a class="nav-link" href="./opportunities.htm">Opportunities</a>
+          <a class="nav-link" href="http://recruitbme.engineering.ucdavis.edu/" target="_blank">Recruitment</a>
         </div>
       </div>
     </nav>
 
     <div class="content">
-      <a name="#"></a>
       <div class="landing-wrapper">
-        <div class="landing">
-          <div class="caption">
-            <p>UC Davis Biomedical Engineering</p>
-          </div>
-          <div class="container">
-            <img src="./files/code.png" alt="code" style="width:100%;">
-          </div>
-          <h1 class="landing-title" class="centered">Emilie Roncali Lab</h1>
+        <!-- TITLE -->
+        <div>
+          <h1 class="landing-title" class="centered">Research</h1>
         </div>
       </div>
 
-      <div class="image-text-section right">
-        <div class="image-text-section__content">
-          <h3 class="title">Research Overview</h3>
+      <div>
+        <br><br><h2>Overview</h2>
           <p class="paragraph">
-            We develop multiscale modeling and simulation tools for quantitative imaging and personalized
-            medicine, with an emphasis on imaging physics and nuclear medicine.
+              We develop multiscale modeling and simulation tools for medical imaging and personalized medicine, with an emphasis on physics and nuclear medicine. Our models are informed with clinical images and experimental data obtained from our close collaborators.
             <br><br>
-            Because our goal is to
-            develop create quantitative computational models, a core concept is to inform these models
-            with clinical images and experimental data obtained from our close collaborators.
-            We are currently pursuing two research directions related to nuclear medicine.
-            <ul>
-              <li>We create in silico models of radiation detectors to advance the technology of positron
-            emission tomography (PET). Projects include new optical Monte Carlo simulation
-            models, studying the underlying physics of ultrafast detectors, optimization of detector
-            design for time-of-flight PET.</li>
-              <li>We are developing quantitative dosimetry methods for targeted radionuclide therapy,
-            with a special interest in liver radioembolization with yttrium-90 microspheres,
-            computational fluid dynamics to model the microsphere transport, quantitative imaging
-            of yttrium-90, and multiscale dosimetry physics. The ultimate goal of this research is to
-            improve the outcome of cancer patients through advanced treatment planning and
-            monitoring, and advancing cancer research through personalized medicine.</li>
+              We create in silico models of radiation detectors to advance the technology of positron emission tomography (PET). Projects include new optical Monte Carlo simulation models, studying the physics of ultrafast detectors, optimization of detector design for time-of-flight PET.
+            <br><br>
+              We develop quantitative dosimetry for targeted radionuclide therapy, with a special interest in liver radioembolization with yttrium-90 microspheres. Our projects include computational fluid dynamics to model the microsphere transport, yttrium-90 imaging, and multiscale dosimetry. We aim at improving the outcome of cancer patients through advanced treatment planning and monitoring.
           </p>
-        </div>
-        <div class="image-text-section__visual">
-          <!--- IMAGE HERE -->
-          <img src="./files/kuma2.png" draggable="false">
-        </div>
       </div>
+
+      <br><br><h2>Projects</h2>
 
       <div class="speakers-section">
         <div class="tab-buttons--side">
           <div class="tab-button tab-button--active" onclick="switchTab(0, &#39;side&#39;)">
-            <h4 class="tab-button__title">Research1</h4>
+            <h5 class="tab-button__title">DOSIMETRY FOR TARGETED RADIONUCLIDE THERAPY</h5>
           </div>
           <div class="tab-button" onclick="switchTab(1, &#39;side&#39;)">
-            <h4 class="tab-button__title">Research2</h4>
+            <h5 class="tab-button__title">QUANTITATIVE Y-90 PET IMAGING</h5>
           </div>
           <div class="tab-button" onclick="switchTab(2, &#39;side&#39;)">
-            <h4 class="tab-button__title">Research3</h4>
+            <h5 class="tab-button__title">IMAGING PHYSICS MODELING</h5>
           </div>
           <div class="tab-button" onclick="switchTab(3, &#39;side&#39;)">
-            <h4 class="tab-button__title">Research4</h4>
+            <h5 class="tab-button__title">ULTRAFAST RADIATION DETECTORS USING PROMPT PHOTONS</h5>
           </div>
         </div>
 
         <div class="tab-content--side">
           <div class="tab-content tab-content--active">
-            <h5 class="panel__title">RADIONUCLIDE THERAPY DOSIMETRY</h5>
+            <h3 class="panel__title">RADIONUCLIDE THERAPY DOSIMETRY</h3>
             <p style="margin: 5px 0 30px 0;">
-              Targeted radionuclide therapy is a type of radiation therapy based on radiolabeled molecules or
-              particles. These radiolabeled particles or molecules are injected systemically or locoregionally
-              to target tumors with short-range radiation to minimize the effect of radiation of surrounding
-              tissues. If attached to a tumor marker, the radionuclide has the potential to reach disseminated
-              tumors (e.g. metastases) with limited radiotoxicity, which makes it extremely attractive and has
-              recently accelerated the development of therapeutic radiopharmaceuticals.
-              <br><br>Targeted radionuclide therapy uniquely sits between external beam radiation therapy and
-              chemotherapy and is typically utilized with little consideration for the dosimetry. In the era of
-              personalized medicine, it becomes critical to develop dosimetry methods that estimate or
-              calculate patient-specific radiation dose distributions, before or after treatment and that could
-              ultimately be routinely applied clinically.
-              <br><br>Our lab combines engineering principles and translational research to develop quantitative
-              dosimetry methods personalized for each patient. We focus on two types of radionuclide
-              therapies administered at UC Davis Health: yttrium-90 radioembolization and lutetium 177
-              based therapies.
+              Targeted radionuclide therapy is a type of radiation therapy based on radiolabeled molecules or particles injected to target tumors with short-range radiation. If attached to a tumor marker, the radionuclide has the potential to reach disseminated tumors with limited radiotoxicity , which makes it attractive and has recently accelerated the development of therapeutic radiopharmaceuticals.
+              <br><br>Targeted radionuclide therapy uniquely sits between external beam radiation therapy and chemotherapy and is typically utilized with little consideration for the dosimetry. Our lab combines engineering principles and translational research to develop quantitative dosimetry methods personalized for each patient. We focus on two types of radionuclide therapies administered at UC Davis Health: yttrium-90 radioembolization and lutetium 177 based therapies.
             </p>
-            <h5 class="panel__title">CFDose: Dosimetry for Radioembolization Treatment Planning</h5>
+            <h3 class="panel__title">CFDose: Dosimetry for Y-90 Radioembolization Treatment Planning</h3>
+            <iframe width="100%" height="350px" src="https://www.youtube.com/embed/piArDlW5Q4c" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
             <p style="margin: 5px 0 30px 0;">
-              Transarterial radioembolization (TARE) is a loco-regional radionuclide therapy based on the
-              delivery of radioactive yttrium-90 microspheres to liver tumors. Accurate pretreatment
-              dosimetry is necessary to determine the Y-90 activity to inject to optimize the dose to the
-              tumor while sparing the rest of the liver. Combined with monitoring of the patient response to
-              treatment, it could result in much greater increase in patient survival than what recent clinical
-              trials have demonstrated.
-              <br><br>We are developing patient-specific dosimetry (CFDose) combining computational fluid
-              dynamics (CFD) simulation and Y-90 microsphere decay physics to estimate the volumetric dose
-              distribution in the liver. We segment the hepatic arterial tree from the Cone-beam CT images
-              obtained during treatment planning for each patient. Using multiscale modeling, we carry out
-              CFD simulations for each patient’s anatomy, estimating the blood flow distribution and
-              microsphere transport. We then compute the radiation dose distribution from the microsphere
-              distribution using a dose point kernel.
-              <br><br>Our long-term goal is developing a tool integrated in the clinical workflow to assist physicians
-              with optimizing the quantity and injection site of Y-90 microspheres during radioembolization
-              planning. Current research includes improving the personalization of the CFD simulation,
-              developing strategies to speed up the computation, optimizing the dosimetry calculation using
-              multiscale modeling
+              Transarterial radioembolization is a radionuclide therapy based on the delivery of radioactive Y-90 microspheres to liver tumors. Accurate pretreatment dosimetry is necessary to determine the Y-90 activity to inject to optimize the dose to the tumor while sparing the rest of the liver. Combined with monitoring of the patient’s response to treatment, it could result in much greater increase in patient survival than what recent clinical trials have demonstrated.
+              <br><br>We are developing patient-specific dosimetry (CFDose) using computational fluid dynamics (CFD) simulation and Y-90 microsphere decay physics to estimate the dose distribution in the liver. Using multiscale modeling, we carry out CFD simulations for each patient’s anatomy, estimating the microsphere transport and the radiation dose distribution.
+              <br><br>Our long-term goal is developing a tool to assist physicians with optimizing the quantity and injection site of Y-90 microspheres during radioembolization planning.  Current research includes personalizing CFD simulations, developing strategies to speed up the computation, optimizing dose calculation using multiscale modeling.
             </p>
-            <img src="./files/dosekernelcalculation.png" alt="code" style="width:100%;">
-            <h5 class="panel__title">Quantitative Y-90 PET Imaging for Post-Treatment Dosimetry</h5>
+            <img src="./assets/dosekernelcalculation.png" alt="code" style="width:100%;">
+          </div>
+          <div class="tab-content">
+            <h3 class="panel__title">Quantitative Y-90 PET Imaging for Post-Treatment Dosimetry</h3>
             <p style="margin: 5px 0 30px 0;">
-              In parallel to dose prediction, we are also developing quantitative imaging to measure the Y-90
-              microsphere distribution after treatment, using Positron Emission Tomography (PET). This
-              translational research is carried out within the Department of Radiology at UC Davis Health, in
-              three locations including the new EXPLORER Molecular Imaging Center (EMIC) where we are
-              evaluating the impact of high-sensitivity PET on Y-90 quantification using total-body PET. WE
-              are computing the dose distribution from the PET images.
+              In parallel to dose prediction, we are also developing quantitative imaging to measure the Y-90 microsphere distribution after treatment, using Positron Emission Tomography (PET). This translational research is carried out within the Department of Radiology at UC Davis Health including the new EXPLORER Molecular Imaging Center  where we are evaluating the impact of high-sensitivity PET on Y-90 quantification using total-body PET.
             </p>
-            <img src="./files/y90petctfordoseverification.png" alt="code" style="width:100%;">
+            <img src="./assets/y90petctfordoseverification.png" alt="code" style="width:100%;">
             <p>
-              Challenges we are solving include optimizing the reconstruction of the low signal Y-90 PET
-              images, developing quantitative comparison of the Y-90 PET dose distribution with CFDose
-              estimates, incorporating anatomical information from other imaging modalities such as CT to
-              segment tumors and improve quantification.
+              Problems we are solving include optimizing the reconstruction of the low signal Y-90 PET images, developing quantitative comparison of the Y-90 PET dose distribution with CFDose estimates, incorporating anatomical information from other imaging modalities such as CT to segment tumors and improve quantification.
             </p>
           </div>
           <div class="tab-content">
-            <h5 class="panel__title">NUCLEAR IMAGING DETECTOR MODELING</h5>
+            <h3 class="panel__title">Imaging physics modeling and simulation tools</h3>
+            <iframe width="100%" height="350px" src="https://www.youtube.com/embed/MvYBaOAswKg" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
             <p style="margin: 5px 0 30px 0;">
-              [description]
-            </p>
-          </div>
-          <div class="tab-content">
-            <h5 class="panel__title">Imaging physics modeling and simulation tools</h5>
-            <p style="margin: 5px 0 30px 0;">
-              Monte Carlo simulations are extensively used to design radiation detectors and predict medical
-              imaging system performance. Accurate modeling of radiation detectors, typically composed of
-              a semiconductor or a scintillation crystal coupled to a photodetector, is required to predict
-              performance. One of the basic principles of these detectors is the generation of a large number
-              of optical photons (7,0000-60,000) when the incident high-energy particle interacts with the
-              scintillator. The number of optical photons produced is proportional to the energy of the
-              particle; efficiently collecting these photons is essential to achieve high performance of the
-              detector.
-              <br><br>Until recently, simulation tools used to study radiation detectors for nuclear medicine were
-              designed for high-energy physics and only included simplistic models to track visible photons
-              emitted in the scintillator. Since the spatial and temporal distribution of light defines the
-              spatial, energy, and timing resolution of detectors, this is a huge limitation. We developed a
-              new optical model, the “LUT Davis model”, based on measured 3D crystal surfaces and ray
-              tracing with data stored in optical look-up-tables (LUTs). This work was validated in a series of
-              benchtop experiments with positron emission tomography detectors and implemented in one
-              of the widespread physics simulation software GATE (2000 users world-wide) in 2017.
-              The Roncali lab is one of the 22 international partners of the openGATE collaboration that
-              develops, maintains this opensource software, and organizes user worskhops and trainings.
+              Monte Carlo simulations are extensively used to design radiation detectors and predict medical imaging system performance. Accurate modeling of radiation detectors, typically composed of a semiconductor or a scintillation crystal coupled to a photodetector, is required to predict performance. Until recently, simulation tools used to study radiation detectors for nuclear medicine were designed for high-energy physics and only included simplistic models to track visible photons emitted in the scintillator. Since the spatial and temporal distribution of light defines the spatial, energy, and timing resolution of detectors, this is a huge limitation.
+              <br><br>We developed a new optical model, the “LUT Davis model”, based on measured 3D crystal surfaces and ray tracing with data stored in optical look-up-tables (LUTs). This work was validated in a series of benchtop experiments with positron emission tomography detectors and implemented in one of the widespread physics simulation software GATE (2000 users world-wide) in 2017.
+              <br><br>The Roncali lab is one of the 22 international partners of the openGATE collaboration that develops, maintains this opensource software, and organizes user worskhops and trainings.
               <br><br>Please visit http://www.opengatecollaboration.org/ for more information on GATE.
             </p>
-            <img src="./files/completesimulationframework.png" alt="code" style="width:100%;">
-            <h5 class="panel__title">Optical Monte Carlo simulation</h5>
+            <img src="./assets/completesimulationframework.png" alt="code" style="width:100%;">
             <p style="margin: 5px 0 30px 0;">
-              Our current work focuses on the development and validation of new optical surfaces with novel
-              reflectors, and the implementation of free computational tools to allow scientists to
-              independently design and test optical surfaces tailored to their application.
-            </p>
-            <h5 class="panel__title">Ultrafast radiation detectors using prompt photons</h5>
-            <p style="margin: 5px 0 30px 0;">
-              Cerenkov emission in scintillators only takes ~10 ps, much faster than scintillation (10-300 ns). It
-              is a promising alternative for timing triggering to achieve ultra-fast detectors with timing
-              resolution of less than 100 ps, but very few photons are produced (10-20 per 511 keV
-              photoelectric interaction). Cerenkov-based detectors must minimize the travel time in the
-              crystal, maximize the photon collection, and employ photodetectors that generate a fast signal
-              to trigger on these prompt photons. We are applying our unique optical modeling tools to study
-              these combined factors and have demonstrated that our simulations can explain complex
-              timing patterns measured reported by several international research groups.
-            </p>
-            <img src="./files/bgotimingspectrum.png" alt="code" style="width:100%;">
-            <p>
-              These tools are critical to develop the next generation of ultrafast detectors. We are now
-              pushing the frontiers of Cerenkov-based detectors by studying and optimizing the use of
-              Cerenkov light in semi-conductor radiation detectors.
+              Our current work focuses on the development and validation of new optical surfaces with novel reflectors, and the implementation of free computational tools to allow scientists to independently design and test optical surfaces tailored to their application.
             </p>
           </div>
           <div class="tab-content">
-            <h5 class="panel__title">Research4</h5>
+            <h3 class="panel__title">Ultrafast radiation detectors using prompt photons</h3>
             <p style="margin: 5px 0 30px 0;">
-              [description]
+              Cerenkov emission in scintillators only takes ~10 ps, much faster than scintillation (10-300 ns). It is a promising alternative for timing triggering to achieve ultra-fast detectors with timing resolution of less than 100 ps, but very few photons are produced (10-20 per 511 keV photoelectric interaction). Cerenkov-based detectors must minimize the travel time in the crystal, maximize the photon collection, and employ photodetectors that generate a fast signal to trigger on these prompt photons. We are applying our unique optical modeling tools to study these combined factors and have demonstrated that our simulations can explain complex timing patterns measured reported by several international research groups.
+            </p>
+            <img src="./assets/bgotimingspectrum.png" alt="code" style="width:100%;">
+            <p>
+              These tools are critical to develop the next generation of ultrafast detectors. We are now pushing the frontiers of Cerenkov-based detectors by studying and optimizing the use of Cerenkov light in semi-conductor radiation detectors such as Thallium Bromide and Thallium Chloride (collaboration with Dr. Gerard Ariño-Estrada).
             </p>
           </div>
         </div>

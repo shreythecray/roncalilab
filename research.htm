@@ -37,13 +37,13 @@
       </div>
 
       <div>
-          <p class="paragraph">
+          <p2 class="paragraph">
               We develop multiscale modeling and simulation tools for medical imaging and personalized medicine, with an emphasis on physics and nuclear medicine. Our models are informed with clinical images and experimental data obtained from our close collaborators.
             <br><br>
               We create in silico models of radiation detectors to advance the technology of positron emission tomography (PET). Projects include new optical Monte Carlo simulation models, studying the physics of ultrafast detectors, optimization of detector design for time-of-flight PET.
             <br><br>
               We develop quantitative dosimetry for targeted radionuclide therapy, with a special interest in liver radioembolization with yttrium-90 microspheres. Our projects include computational fluid dynamics to model the microsphere transport, yttrium-90 imaging, and multiscale dosimetry. We aim at improving the outcome of cancer patients through advanced treatment planning and monitoring.
-          </p>
+          </p2>
       </div>
 
       <br><br><h2>Projects</h2>
@@ -71,14 +71,14 @@
               Targeted radionuclide therapy is a type of radiation therapy based on radiolabeled molecules or particles injected to target tumors with short-range radiation. If attached to a tumor marker, the radionuclide has the potential to reach disseminated tumors with limited radiotoxicity , which makes it attractive and has recently accelerated the development of therapeutic radiopharmaceuticals.
               <br><br>Targeted radionuclide therapy uniquely sits between external beam radiation therapy and chemotherapy and is typically utilized with little consideration for the dosimetry. Our lab combines engineering principles and translational research to develop quantitative dosimetry methods personalized for each patient. We focus on two types of radionuclide therapies administered at UC Davis Health: yttrium-90 radioembolization and lutetium 177 based therapies.
             </p>
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/videoseries?list=PL66eYKvhz3Lm8IXKc1cq8iUxKJFRMzi1Y&loop=1&autoplay=1" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
             <h3 class="panel__title">CFDose: Dosimetry for Y-90 Radioembolization Treatment Planning</h3>
-            <iframe width="100%" height="350px" src="https://www.youtube.com/embed/piArDlW5Q4c" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
             <p style="margin: 5px 0 30px 0;">
               Transarterial radioembolization is a radionuclide therapy based on the delivery of radioactive Y-90 microspheres to liver tumors. Accurate pretreatment dosimetry is necessary to determine the Y-90 activity to inject to optimize the dose to the tumor while sparing the rest of the liver. Combined with monitoring of the patient’s response to treatment, it could result in much greater increase in patient survival than what recent clinical trials have demonstrated.
               <br><br>We are developing patient-specific dosimetry (CFDose) using computational fluid dynamics (CFD) simulation and Y-90 microsphere decay physics to estimate the dose distribution in the liver. Using multiscale modeling, we carry out CFD simulations for each patient’s anatomy, estimating the microsphere transport and the radiation dose distribution.
-              <br><br>Our long-term goal is developing a tool to assist physicians with optimizing the quantity and injection site of Y-90 microspheres during radioembolization planning.  Current research includes personalizing CFD simulations, developing strategies to speed up the computation, optimizing dose calculation using multiscale modeling.
+              <br><br><img src="./assets/dosekernelcalculation.png" alt="code" style="width:100%;">
+              <br>Our long-term goal is developing a tool to assist physicians with optimizing the quantity and injection site of Y-90 microspheres during radioembolization planning.  Current research includes personalizing CFD simulations, developing strategies to speed up the computation, optimizing dose calculation using multiscale modeling.
             </p>
-            <img src="./assets/dosekernelcalculation.png" alt="code" style="width:100%;">
           </div>
           <div class="tab-content">
             <h3 class="panel__title">Quantitative Y-90 PET Imaging for Post-Treatment Dosimetry</h3>
@@ -92,7 +92,7 @@
           </div>
           <div class="tab-content">
             <h3 class="panel__title">Imaging physics modeling and simulation tools</h3>
-            <iframe width="100%" height="350px" src="https://www.youtube.com/embed/MvYBaOAswKg" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/videoseries?list=PL66eYKvhz3LldElyt-88gv1QaZHsnvVbm&loop=1&autoplay=1" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
             <p style="margin: 5px 0 30px 0;">
               Monte Carlo simulations are extensively used to design radiation detectors and predict medical imaging system performance. Accurate modeling of radiation detectors, typically composed of a semiconductor or a scintillation crystal coupled to a photodetector, is required to predict performance. Until recently, simulation tools used to study radiation detectors for nuclear medicine were designed for high-energy physics and only included simplistic models to track visible photons emitted in the scintillator. Since the spatial and temporal distribution of light defines the spatial, energy, and timing resolution of detectors, this is a huge limitation.
               <br><br>We developed a new optical model, the “LUT Davis model”, based on measured 3D crystal surfaces and ray tracing with data stored in optical look-up-tables (LUTs). This work was validated in a series of benchtop experiments with positron emission tomography detectors and implemented in one of the widespread physics simulation software GATE (2000 users world-wide) in 2017.
@@ -107,7 +107,7 @@
           <div class="tab-content">
             <h3 class="panel__title">Ultrafast radiation detectors using prompt photons</h3>
             <p style="margin: 5px 0 30px 0;">
-              Cerenkov emission in scintillators only takes ~10 ps, much faster than scintillation (10-300 ns). It is a promising alternative for timing triggering to achieve ultra-fast detectors with timing resolution of less than 100 ps, but very few photons are produced (10-20 per 511 keV photoelectric interaction). Cerenkov-based detectors must minimize the travel time in the crystal, maximize the photon collection, and employ photodetectors that generate a fast signal to trigger on these prompt photons. We are applying our unique optical modeling tools to study these combined factors and have demonstrated that our simulations can explain complex timing patterns measured reported by several international research groups.
+              Cerenkov emission in scintillators only takes ~10 ps, much faster than scintillation (10-300 ns). It is a promising alternative for timing triggering to achieve ultra-fast detectors with timing resolution of less than 100 ps, but very few photons are produced (10-20 per 511 keV photoelectric interaction). Cerenkov-based detectors must minimize the travel time in the crystal, maximize the photon collection, and employ photodetectors that generate a fast signal to trigger on these prompt photons (collaboration with Dr. Sun Il Kwon). We are applying our unique optical modeling tools to study these combined factors and have demonstrated that our simulations can explain complex timing patterns measured reported by several international research groups.
             </p>
             <img src="./assets/bgotimingspectrum.png" alt="code" style="width:100%;">
             <p>

@@ -45,6 +45,12 @@ p, li {
   color: #fff;
   line-height: 30px; }
 
+  p2 {
+    font-family: "Roboto";
+    font-size: 22px;
+    color: #fff;
+    line-height: 30px; }
+
 .content {
   width: 80%;
   max-width: 1000px;

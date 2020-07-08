@@ -5,7 +5,7 @@
   <title>Roncali Lab - UC Davis</title>
   <link href="https://fonts.googleapis.com/css?family=Lexend+Deca&display=swap" rel="stylesheet">
   <link href="./style/styles.css" rel="stylesheet">
-  <link rel="icon" type="image/png" href="./assets/r_logo_.png">
+  <link rel="icon" type="image/png" href="./assets/r_logo.png">
   <script src="script.js"></script>
 </head>
 
@@ -15,18 +15,22 @@
       <div class="nav-content">
         <!-- LOGO -->
         <a class="logo">
-          <img src="./assets/logo_.png">
+          <img src="./assets/logo.png">
         </a>
         <!-- MENU -->
         <div class="links">
           <a class="nav-link" href="./index.htm">Home</a>
           <a class="nav-link" href="./research.htm">Research</a>
-          <a class="nav-link" href="./index.htm#team">Team</a>
+          <a class="nav-link" href="./team.htm">Team</a>
           <a class="nav-link" href="./opportunities.htm">Opportunities</a>
           <!-- <a class="nav-link" href="http://recruitbme.engineering.ucdavis.edu/" target="_blank">Recruitment</a> -->
         </div>
       </div>
     </nav>
+
+    <br><br><br><br><br><br><br><br>
+    <br><br><br><br><br><br><br><br>
+    <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
 
 
     <div class="content">
@@ -34,19 +38,54 @@
         <!-- TITLE -->
         <div>
           <h1 class="landing-title" class="centered">Roncali Lab</h1>
-          <img src="./assets/title.png" alt="code" style="width:100%;">
+          <!-- Slideshow -->
+          <div class="slidershow middle">
+
+            <div class="slides">
+              <input type="radio" name="r" id="r1" checked>
+              <input type="radio" name="r" id="r2">
+              <input type="radio" name="r" id="r3">
+              <input type="radio" name="r" id="r4">
+              <input type="radio" name="r" id="r5">
+              <div class="slide s1">
+                <img src="assets/slides/title.png" alt="">
+              </div>
+              <div class="slide">
+                <img src="assets/slides/2.jpg" alt="">
+              </div>
+              <div class="slide">
+                <img src="assets/slides/3.jpg" alt="">
+              </div>
+              <div class="slide">
+                <img src="assets/slides/4.jpg" alt="">
+              </div>
+              <div class="slide">
+                <img src="assets/slides/5.jpg" alt="">
+              </div>
+            </div>
+
+            <div class="navigation">
+              <label for="r1" class="bar"></label>
+              <label for="r2" class="bar"></label>
+              <label for="r3" class="bar"></label>
+              <label for="r4" class="bar"></label>
+              <label for="r5" class="bar"></label>
+            </div>
+          </div>
         </div>
       </div>
 
+      <!-- ABOUT -->
       <a name="about"></a>
-      <div class="image-text-section">
-        <div class="image-text-section__content">
+      <div class="home_text_">
+        <div class="home_text">
           <p class="paragraph">
             The Roncali lab is part of the Department of Biomedical Engineering and the Department of Radiology.
             <br><br>
             Applying a biomedical engineering perspective to solve clinical problems, we conduct highly translational and interdisciplinary research in close collaboration with clinicians at UC Davis Health and other institutions.
             <br><br>
-            We focus on modeling and simulation for medical imaging and therapy physics, and translating the benefits of technological advances to improving the care of our patients. Please explore our website to learn more!</p>
+            We focus on modeling and simulation for medical imaging and therapy physics, and translating the benefits of technological advances to improving the care of our patients. Please explore our website to learn more!
+          </p>
         </div>
         <div class="image-text-section__visual">
           <a class="twitter-timeline" data-height="500" data-theme="light" href="https://twitter.com/EmilieRoncali?ref_src=twsrc%5Etfw">
@@ -57,169 +96,8 @@
         </div>
       </div>
 
-      <a name="team"></a>
 
       
-<!-- TEAM  -->
-
-      <h1 class="landing-title" class="centered">Team</h1>
-      <div class="image-text-section">
-        <div class="image-text-section__visual">
-          <img src="./assets/team/roncali.jpg" draggable="false">
-        </div>
-        <div class="image-text-section__content">
-          <h3 class="title">Emilie Roncali, Ph.D.</h3>
-          <p class="team">
-            <i>Assistant Professor in Biomedical Engineering and Radiology</i>
-            <br>DEPARTMENT OF BIOMEDICAL ENGINEERING | <a href="mailto:joe@eroncali@ucdavis.edu?subject=feedback" style="color:#CEE5F2">eroncali@ucdavis.edu</a>
-            <br>DEPARTMENT OF RADIOLOGY
-            <BR>EDUCATION:
-              <br>PhD, Ecole Centrale Paris, 2008
-              <br>M.Sc, Ecole Centrale Lyon, 2003
-              <br>B.Sc., Ecole Centrale Lyon, 2003
-          </p>
-        </div>
-      </div>
-
-      <div class="image-text-section">
-        <div class="image-text-section__visual">
-          <img src="./assets/team/costa.jpg" draggable="false">
-        </div>
-        <div class="image-text-section__content">
-          <h3 class="title">Gustavo Coelho Alves Costa, Ph.D.</h3>
-          <p class="team">
-            <i>Postdoctoral Researcher</i>
-            <br>DEPARTMENT OF BIOMEDICAL ENGINEERING |
-            <br>PROJECT:
-            <BR>EDUCATION:
-          </p>
-        </div>
-      </div>
-
-      <div class="image-text-section">
-        <div class="image-text-section__visual">
-          <img src="./assets/team/taebi.jpg" draggable="false">
-        </div>
-        <div class="image-text-section__content">
-          <h3 class="title">Amirtaha Taebi, Ph.D.</h3>
-          <p class="team">
-            <i>Postdoctoral Researcher</i>
-            <br>DEPARTMENT OF BIOMEDICAL ENGINEERING | <a href="mailto:ataebi@ucdavis.edu?subject=feedback" style="color:#CEE5F2">ataebi@ucdavis.edu</a>
-            <br>PROJECT: CFDose, a dosimetry method for liver cancer radioembolization based on computational fluid dynamics simulation of the blood flow inside hepatic arterial tree.
-            <BR>EDUCATION:
-            <br>PhD, University of Central Florida, 2018
-            <br>MSc, Politecnico di Milano, 2013
-            <br>BSc, Sharif University of Technology, 2010
-          </p>
-        </div>
-      </div>
-
-      <div class="image-text-section">
-        <div class="image-text-section__visual">
-          <img src="./assets/team/trigila.jpg" draggable="false">
-        </div>
-        <div class="image-text-section__content">
-          <h3 class="title">Carlotta Trigila, Ph.D.</h3>
-          <p class="team">
-            <i>Postdoctoral Researcher</i>
-            <br>DEPARTMENT OF BIOMEDICAL ENGINEERING |
-            <BR>EDUCATION:
-            <br>PhD in Medical Imaging and Radioactivity, University of Paris Saclay, France, 2019
-            <br>Masters in Nuclear and SubNuclear Physics, University of Roma Tre, Italy, 2015
-            <br>BS in Physics, University of Roma Tre, Italy, 2013
-          </p>
-        </div>
-      </div>
-
-      <div class="image-text-section">
-        <div class="image-text-section__visual">
-          <img src="./assets/team/bhalaru.jpg" draggable="false">
-        </div>
-        <div class="image-text-section__content">
-          <h3 class="title">Shaan Bhalaru</h3>
-          <p class="team">
-            <i>Undergraduate Student</i>
-            <br>COLLEGE OF ENGINEERING | <a href="mailto:sbhalaru@ucdavis.edu?subject=feedback" style="color:#CEE5F2">sbhalaru@ucdavis.edu</a>
-            <br>PROJECT: My current project is to help predict blood flow in the hepatic artery to aid in the process of radioembolization to help faster diagnose liver cancer patients. I focus on segmenting liver data so that our machine learning program can locate the liver in new patients.
-            <BR>EDUCATION:
-            <br>BS in Electrical Engineering, UC Davis, Expected 2020
-          </p>
-        </div>
-      </div>
-
-      <div class="image-text-section">
-        <div class="image-text-section__visual">
-          <img src="./assets/team/gupta.jpg" draggable="false">
-        </div>
-        <div class="image-text-section__content">
-          <h3 class="title">Shreya Gupta</h3>
-          <p class="team">
-            <i>Undergraduate Student</i>
-            <br>COLLEGE OF ENGINEERING | <a href="mailto:shrgupta@ucdavis.edu?subject=feedback" style="color:#CEE5F2">shrgupta@ucdavis.edu</a>
-            <br>PROJECT: Website Developer
-            <BR>EDUCATION: BS in Computer Science and Engineering, UC Davis, Expected 2021
-          </p>
-        </div>
-      </div>
-
-      <div class="image-text-section">
-        <div class="image-text-section__visual">
-          <img src="./assets/team/janibek.jpg" draggable="false">
-        </div>
-        <div class="image-text-section__content">
-          <h3 class="title">Nursultan Janibek</h3>
-          <p class="team">
-            <i>Undergraduate Student</i>
-            <br>COLLEGE OF ENGINEERING | <a href="mailto:nmjanibek@ucdavis.edu?subject=feedback" style="color:#CEE5F2">nmjanibek@ucdavis.edu</a>
-            <br>PROJECT:
-            <br>0D modeling is an alternative method of predicting blood flow inside the liver. The main goal of the project is to achieve fast simulation times as well as high accuracy.
-            <BR>EDUCATION:
-            <br>BS in Mechanical Engineering, UC Davis, Expected 2021 
-          </p>
-        </div>
-      </div>
-
-      <div class="image-text-section">
-        <div class="image-text-section__content">
-          <h2 class="headline">Collaborators</h2>
-        </div>
-      </div>
-
-      <div class="image-text-section">
-        <div class="image-text-section__visual">
-          <img src="./assets/team/estrada.jpg" draggable="false">
-        </div>
-        <div class="image-text-section__content">
-          <h3 class="title">Gerard Ariño-Estrada, Ph.D.</h3>
-          <p class="team">
-            <i>Assistant Project Scientist</i>
-            <br>DEPARTMENT OF BIOMEDICAL ENGINEERING | <a href="mailto:garino@ucdavis.edu?subject=feedback" style="color:#CEE5F2">garino@ucdavis.edu</a>
-            <br>PROJECT:
-            <br> I am interested in novel materials with prompt luminescence properties for time-of-flight positron emission tomography and proton range verification in proton therapy such as pure čerenkov emitters and fast scintillation crystals (thallium bromide and thallium chloride). I work on the next generation of photodetectors for these materials.
-            <BR>EDUCATION:
-            <br>PhD in Physics, Universitat Autònoma de Barcelona, Spain, 2015
-            <br>MSc in Applied Mathematics and Modeling, Universitat Autònoma de Barcelona, (Spain), 2012
-            <br>BS in Physics, Universitat Autònoma de Barcelona, Spain, 2011
-          </p>
-        </div>
-      </div>
-
-      <div class="image-text-section">
-        <div class="image-text-section__visual">
-          <img src="./assets/team/kwon.jpg" draggable="false">
-        </div>
-        <div class="image-text-section__content">
-          <h4 class="title">Sun Il Kwon, Ph.D.</h4>
-          <p class="team">
-            <i>Assistant Project Scientist</i>
-            <br>DEPARTMENT OF BIOMEDICAL ENGINEERING | <a href="mailto:sunkwon@ucdavis.edu?subject=feedback" style="color:#CEE5F2">sunkwon@ucdavis.edu</a>
-            <br>PROJECT: Developing novel ultra-fast time-of-flight (TOF) positron emission tomography (PET) systems using Cerenkov photons and fast scintillation photons.
-            <BR>EDUCATION:
-            <br>Ph.D., Seoul National University, Seoul, South Korea, 2013
-            <br>B.S., Korea Advanced Institute of Science and Technology (KAIST), Daejeon, South Korea, 2002
-          </p>
-        </div>
-      </div>
-
-    </div>
+  </div>
+    
 </body></html>
